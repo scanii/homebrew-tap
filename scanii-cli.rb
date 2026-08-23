@@ -5,21 +5,21 @@
 class ScaniiCli < Formula
   desc "Scanii CLI — interact with the Scanii API and run a local mock server for integration testing"
   homepage "https://www.scanii.com"
-  version "1.9.0"
+  version "1.10.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scanii/scanii-cli/releases/download/v1.9.0/scanii-cli-1.9.0-darwin-amd64.tar.gz"
-      sha256 "757ac171a2a85d39d18dbcf3b8276ae554c82a22b251cc7eebe62d2f0d4d54eb"
+      url "https://github.com/scanii/scanii-cli/releases/download/v1.10.0/scanii-cli-1.10.0-darwin-amd64.tar.gz"
+      sha256 "2b1abfcde7b8bc53e0f72932080475e0ff91c82a65f161f44670e56a0ef825c1"
 
       define_method(:install) do
         bin.install "sc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scanii/scanii-cli/releases/download/v1.9.0/scanii-cli-1.9.0-darwin-arm64.tar.gz"
-      sha256 "1e8c02a4b1bb7a935b73dce1052b3b4ae0696229069849ad52c5f6715aebe76c"
+      url "https://github.com/scanii/scanii-cli/releases/download/v1.10.0/scanii-cli-1.10.0-darwin-arm64.tar.gz"
+      sha256 "66e3be8d3b33fb764db8afbb8646570eb7b76a4791a8bd28949c03fc5a3a2885"
 
       define_method(:install) do
         bin.install "sc"
@@ -29,15 +29,15 @@ class ScaniiCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scanii/scanii-cli/releases/download/v1.9.0/scanii-cli-1.9.0-linux-amd64.tar.gz"
-      sha256 "28609a4e0bde74c9e7c80827b6deb59e29105eaaee29b8e1915c04902326a87f"
+      url "https://github.com/scanii/scanii-cli/releases/download/v1.10.0/scanii-cli-1.10.0-linux-amd64.tar.gz"
+      sha256 "a462dd12d6d3d473dd07a077232aede1c1ceb0164560271b2a5b8e59b45a99fd"
       define_method(:install) do
         bin.install "sc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scanii/scanii-cli/releases/download/v1.9.0/scanii-cli-1.9.0-linux-arm64.tar.gz"
-      sha256 "349d110e8bd44ada0709ea5d431fd24883f9fbaac3dc991dc82a04e193bc278f"
+      url "https://github.com/scanii/scanii-cli/releases/download/v1.10.0/scanii-cli-1.10.0-linux-arm64.tar.gz"
+      sha256 "a5a415a712480479b1c5c71287d1a5b5d6217f39171c059a12803df0b309bb08"
       define_method(:install) do
         bin.install "sc"
       end
